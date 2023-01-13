@@ -20,6 +20,7 @@ main {
    display: flex;
    justify-content: center;
    flex-direction: column;
+   margin-left: 250px;
 }
 
 .container {
@@ -112,12 +113,22 @@ main {
 }
 
 /* latest courses section styles */
+.section-title{
+/* width: 157px;
+height: 36px; */
+color: #562EFF;
+font-weight: 600;
+font-size: 25px;
+margin-left: 30px;
+padding-bottom: 15px;
+}
 
 .course-section{
    display: flex;
    justify-content: center;
    justify-items: center;
    gap: 45px;
+   margin-left: 30px;
 }
 
 .section-subtitle img {
