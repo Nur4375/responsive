@@ -61,8 +61,8 @@ main {
 }
 
 .player-name img {
-   width: 56px;
-   height: 56px;
+   /* width: 56px; */
+   height: 60px;
    padding-right: 10px;
    font-weight: 500;
    font-size: 18px;
