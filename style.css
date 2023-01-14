@@ -4,7 +4,7 @@
 /* CSS rules to specify families */
 
 * {
-   /* box-sizing: border-box; */
+   box-sizing: border-box;
    margin: 0;
    padding: 0;
 
@@ -18,9 +18,10 @@ body {
 
 main {
    display: flex;
-   justify-content: center;
    flex-direction: column;
-   margin-left: 250px;
+   align-items: center;
+
+
 }
 
 .container {
@@ -29,22 +30,27 @@ main {
    height: 679px;
    justify-content: center;
    justify-items: center;
+   border-radius: 5px;
+   margin-bottom: 10px;
+
+
 
 }
 
-.top-player {
+.section-title {
    width: 127px;
    height: 36px;
-   padding: 30px;
    color: #562EFF;
+   margin-left: 30px;
+   margin-bottom: 25px;
 }
 
 .players-title {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   grid-row-gap: 29px;
-   justify-content: center;
-   justify-items: center;
+   grid-row-gap: 25px;
+   margin-left: 30px;
+
 }
 
 
@@ -66,12 +72,13 @@ main {
    margin-top: 30px;
    width: 807px;
    height: 0px;
+   margin-left: 30px;
    justify-content: center;
    border: 1px solid #D1D1D1;
+   margin-bottom: 5px;
 }
 
 /* Blogs section start here */
-.blogs-container {}
 
 
 .top-blog {
@@ -86,7 +93,7 @@ main {
    grid-template-columns: repeat(2, 1fr);
    align-items: center;
    margin-left: 30px;
-   grid-row-gap: 26px;
+   grid-row-gap: 25px;
    grid-column-gap: 80px;
    margin-left: 30px;
 
@@ -101,50 +108,74 @@ main {
 .blogs-article img {
    width: 177px;
    height: 117px;
-
-
 }
 
 .blog-author {
    color: #562EFF;
    color: #9F9F9F;
    font-size: 16px;
-   
+
 }
 
 /* latest courses section styles */
-.section-title{
-/* width: 157px;
-height: 36px; */
-color: #562EFF;
-font-weight: 600;
-font-size: 25px;
-margin-left: 30px;
-padding-bottom: 15px;
+.course-container {
+   background: #FFFFFF;
+   border-radius: 5px;
+   /* justify-content: center;
+   justify-items: center; */
+   width: 870px;
+   height: 362px;
+   margin-top: 10px;
 }
-
 .course-section{
    display: flex;
-   justify-content: center;
-   justify-items: center;
-   gap: 45px;
    margin-left: 30px;
+
 }
 
-.section-subtitle img {
-   width: 224.38px;
-   height: 105.51px;
+/* .course-title {
+   width: 157px;
+   height: 36px;
+   color: #562EFF;
+} */
+
+.course-title {
+   font-weight: 500;
+   font-size: 36px;
+   color: #562EFF;
+   width: 280px;
+   height: 50px;
+   margin-left: 30px;
+   margin-bottom: 20px;
 }
-.course-title{
+
+.course-subtitle {
+   font-weight: 500;
+   font-size: 20.0336px;
+   color: #1E1E1E;
+}
+
+.course .course-banner img {
+   width: 266px;
+   height: 141px;
+}
+
+.course-info {
    display: flex;
-   gap: 10px;
+   gap: 15px;
 }
-.fa-star{
+
+.fa-star {
    font-size: 12px;
 }
-.fa-star.filled{
+
+.fa-star.filled {
    color: #FFC014;
 }
-.fa-star.empty{
+
+.fa-star.empty {
    color: #AEAEAE;
 }
+
+/*------------------------------------------------------------------ responsive website using media query -------------------------------------------------------------------------- */
+/* for small divices  */
